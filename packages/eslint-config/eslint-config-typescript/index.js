@@ -1,6 +1,6 @@
 module.exports = {
-  extends: [ '@zzopen/eslint-config-base', 'plugin:@typescript-eslint/recommended' ],
-  plugins: [ '@typescript-eslint' ],
+  extends: ['@zzopen/eslint-config-base', 'plugin:@typescript-eslint/recommended'],
+  plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -9,4 +9,4 @@ module.exports = {
       jsx: true,
     },
   },
-}
+};

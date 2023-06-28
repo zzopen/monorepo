@@ -1,0 +1,45 @@
+{
+  "name": "@zzopen/eslint-config-prettier-base",
+  "version": "1.0.0",
+  "description": "Eslint Config With Prettier Support",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzopen/monorepo"
+  },
+  "keywords": [
+    "eslint",
+    "prettier",
+    "eslint-config",
+    "eslint-config-prettier-base"
+  ],
+  "author": "xulei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzopen/monorepo/issues"
+  },
+  "homepage": "https://github.com/zzopen/monorepo",
+  "peerDependencies": {
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": ">=18.6.0"
+  },
+  "dependencies": {
+    "@zzopen/eslint-config-base": "workspace:^",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -5,6 +5,7 @@
         "stylelint.vscode-stylelint",
         "vue.volar",
         "vue.vscode-typescript-vue-plugin",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "maggie.eslint-rules-zh-plugin"
     ]
 }

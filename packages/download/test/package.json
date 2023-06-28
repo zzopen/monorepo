@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zzopen/git-download-file": "workspace:^",
+    "@zzopen/download-file": "workspace:^",
     "axios": "^1.4.0"
   }
 }
