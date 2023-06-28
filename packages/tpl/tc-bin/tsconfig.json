@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./lib",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "jsx": "preserve",
+        "strict": true,
+        "target": "ES2020",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "sourceMap": true,
+        "declaration": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@commands/*": [
+                "src/commands/*"
+            ],
+            "@common/*": [
+                "src/common/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+, "index.js"    ],
+    "exclude": [
+        "node_modules",
+        "lib/**/*"
+    ],
+}

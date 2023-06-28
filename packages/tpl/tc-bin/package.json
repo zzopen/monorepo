@@ -1,0 +1,57 @@
+{
+    "name": "@zzopen/tc-bin",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "bin": {
+        "tc-bin": "./index.js"
+    },
+    "scripts": {
+        "dev": "rimraf ./lib && concurrently \"tsc -w\" \"tsc-alias -w\"",
+        "build": "rimraf ./lib && tsc && tsc-alias"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "files": [
+        "lib",
+        "README.md",
+        "tsconfig.json",
+        "index.js"
+    ],
+    "keywords": [
+        "type-challenges",
+        "ts",
+        "ts-cli",
+        "ts-bin"
+    ],
+    "author": "xulei",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/figlet": "^1.5.6",
+        "@types/fs-extra": "^11.0.1",
+        "@types/node": "^20.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.60.0",
+        "@typescript-eslint/parser": "^5.60.0",
+        "concurrently": "^8.2.0",
+        "eslint": "^8.43.0",
+        "rimraf": "^5.0.1",
+        "tsc-alias": "^1.8.6"
+    },
+    "dependencies": {
+        "chalk": "^5.2.0",
+        "commander": "^11.0.0",
+        "figlet": "^1.6.0",
+        "fs-extra": "^11.1.1",
+        "ora": "^6.3.1"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zzopen/type-challenges.git"
+    },
+    "bugs": "https://github.com/zzopen/type-challenges/issues"
+}
