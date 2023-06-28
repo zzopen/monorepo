@@ -1,0 +1,42 @@
+{
+    "git": {
+        "commitMessage": "release: v${version}",
+        "commit": true,
+        "tag": true,
+        "push": true
+    },
+    "github": {
+        "release": true
+    },
+    "npm": {
+        "publish": false
+    },
+    "hooks": {
+        "before:init": [
+            "echo before:init"
+        ],
+        "after:my-plugin:bump": "echo after:my-plugin:bump",
+        "after:bump": "echo 更新版本成功",
+        "after:git:release": "echo after:git:release",
+        "after:release": "echo after:release"
+    },
+    "plugins": {
+        "@release-it/conventional-changelog": {
+            "infile": "CHANGELOG.md",
+            "preset": {
+                "name": "conventionalcommits",
+                "header": "# Changelog",
+                "types": [
+                    {
+                        "type": "feat",
+                        "section": "Features"
+                    },
+                    {
+                        "type": "fix",
+                        "section": "Bug Fixes"
+                    }
+                ]
+            }
+        }
+    }
+}

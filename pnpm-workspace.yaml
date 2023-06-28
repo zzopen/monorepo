@@ -1,0 +1,7 @@
+packages:
+  - 'packages/eslint-config/*'
+  - 'packages/vscode-config/*'
+  - 'packages/stylelint-config/*'
+  - 'packages/templates/*'
+  - 'packages/tpl/*'
+  - 'packages/download/*'

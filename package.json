@@ -1,0 +1,19 @@
+{
+  "name": "@zzopen/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint src --ext .js",
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "release-it": "^15.11.0"
+  }
+}
