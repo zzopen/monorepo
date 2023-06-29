@@ -1,21 +1,19 @@
 {
   "name": "@zzopen/eslint-config-examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "测试eslint-config各个项目",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint .",
+    "reset": "rm -rf ./node_modules && pnpm i"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@zzopen/eslint-config-base": "workspace:^",
-    "@zzopen/eslint-config-prettier-base": "workspace:^",
-    "@zzopen/prettier-config-base": "workspace:^"
-  },
   "devDependencies": {
     "eslint": "^8.43.0",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "@zzopen/eslint-config-typescript": "workspace:^",
+    "@zzopen/eslint-config-base": "workspace:^"
   }
 }

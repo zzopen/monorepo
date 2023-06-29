@@ -4,25 +4,40 @@
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
+    "**/node_modules": false,
     "**/.idea": true,
     "**/dist": true,
     "**/.github": true
   },
   "tslint.enable": false,
-  "prettier.enable": false,
+  "prettier.enable": true,
+  "prettier.enableDebugLogs": true,
   "eslint.enable": true,
+  "eslint.debug": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "stylelint.snippet": ["css", "less", "postcss", "scss"],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
+  "eslint.options": {
+    "extensions": ["js", "ts", "jsx", "tsx"]
+  },
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
+  },
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

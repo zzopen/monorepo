@@ -1,4 +1,3 @@
 module.exports = {
-  "singleQuote": false,
-  "semi": true,
-}
+  ...require('@zzopen/eslint-config-typescript/prettier')
+};
