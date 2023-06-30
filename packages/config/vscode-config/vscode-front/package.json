@@ -1,0 +1,11 @@
+{
+  "name": "@zzopen/vscode-front",
+  "version": "1.0.0",
+  "description": "vscode front env sets",
+  "scripts": {},
+  "keywords": [
+    "vscode"
+  ],
+  "author": "xulei",
+  "license": "MIT"
+}

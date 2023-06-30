@@ -40,13 +40,13 @@ const config = defineConfig([
       },
     ],
     plugins: [
-      strip({
-        include: ['src/**/*.(ts|js)'],
-        debugger: true,
-        functions: ['console.*'],
-        labels: [],
-        sourceMap: true,
-      }),
+      // strip({
+      //   include: ['src/**/*.(ts|js)'],
+      //   debugger: true,
+      //   functions: ['console.*'],
+      //   labels: [],
+      //   sourceMap: true,
+      // }),
       json(),
       nodeResolve(),
       commonjs(),

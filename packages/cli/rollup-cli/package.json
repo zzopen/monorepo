@@ -1,0 +1,14 @@
+{
+  "name": "@zzopen/rollup-cli",
+  "version": "1.0.0",
+  "description": "自定义rollup-cli工具",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^3.25.2"
+  }
+}

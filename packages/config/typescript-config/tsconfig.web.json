@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "skipLibCheck": true
+  }
+}

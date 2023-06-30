@@ -1,1 +1,2 @@
-export * from '@module/index.js'
+export * from './download'
+export {type DownloadConfig} from '@/common/types'

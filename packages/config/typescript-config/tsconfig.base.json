@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 20",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "allowJs": true, // 允许导入js文件
+    "sourceMap": false, // 生成sourceMap方便追踪源码
+    "esModuleInterop": true,
+    "removeComments": false, // 移除注释
+    "allowSyntheticDefaultImports": true, // 包如果没有默认导出，也可以直接导入
+    "resolveJsonModule": true, // 支持导入json文件
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true, // 文件名大小写敏感
+    "strictFunctionTypes": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}

@@ -1,2 +1,2 @@
-export { downloadFile } from "./download";
-export type { DownloadOptins } from "@/common/types";
+export { downloadFile } from './download'
+export type { DownloadOptins } from '@/common/types'

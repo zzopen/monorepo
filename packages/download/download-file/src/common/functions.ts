@@ -1,13 +1,13 @@
-import { nodeProcess, nodePath } from "./modules";
+import { nodeProcess, nodePath } from './modules'
 
 export function getProcessCwd() {
-  return nodeProcess.cwd();
+  return nodeProcess.cwd()
 }
 
 export function pathResolve(...paths: string[]) {
-  return nodePath.resolve(...paths);
+  return nodePath.resolve(...paths)
 }
 
 export function toCwdAbsolutePath(...paths: string[]) {
-  return pathResolve(getProcessCwd(), ...paths);
+  return pathResolve(getProcessCwd(), ...paths)
 }

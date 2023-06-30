@@ -1,0 +1,12 @@
+{
+  "name": "@zzopen/vscode-go",
+  "version": "1.0.0",
+  "description": "vscode go env sets",
+  "scripts": {},
+  "keywords": [
+    "vscode",
+    "go"
+  ],
+  "author": "xulei",
+  "license": "MIT"
+}

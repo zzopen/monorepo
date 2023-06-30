@@ -4,9 +4,9 @@
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
+    "**/node_modules": false,
     "**/.idea": true,
-    "**/dist": false,
+    "**/dist": true,
     "**/.github": true
   },
   "tslint.enable": false,
