@@ -31,12 +31,12 @@ const config = defineConfig([
       {
         dir: 'dist/esm',
         format: 'esm',
-        entryFileNames: '[name].mjs',
+        entryFileNames: 'a.mjs',
       },
       {
         dir: 'dist/cjs',
         format: 'cjs',
-        entryFileNames: '[name].cjs',
+        entryFileNames: 'b.cjs',
       },
     ],
     plugins: [
@@ -53,11 +53,11 @@ const config = defineConfig([
       nodeExternals(),
       typescript({
         tsconfig: './tsconfig.json',
-        useTsconfigDeclarationDir: true,
+        useTsconfigDeclarationDir: false,
         tsconfigDefaults: {
           compilerOptions: {
-            declaration: true,
-            declarationDir: './dist/types',
+            declaration: false,
+            declarationDir: '',
           },
         },
       }),

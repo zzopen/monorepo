@@ -1,6 +1,6 @@
-import { fse, nodePath, toCwdAbsolutePath, ensureDir } from "@/common";
-import type { DownloadConfig, GitRepoConfig, GitFile } from "@/common";
-import { getRepoContents } from "@/http";
+import { fse, nodePath, toCwdAbsolutePath, ensureDir } from "@/common/index.js";
+import type { DownloadConfig, GitRepoConfig, GitFile } from "@/common/index.js";
+import { getRepoContents } from "@/http/index.js";
 import { downloadFile } from '@zzopen/download-file';
 
 async function download(conf: DownloadConfig): Promise<void> {

@@ -9,13 +9,13 @@
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "sourceMap": true,
-    "declaration": true,
+    "sourceMap": false,
+    "declaration": false,
     "lib": ["esnext", "dom"],
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "index.js", "__tests__/test.ts"],
+  "include": ["src/**/*", "__tests__/test.ts"],
   "exclude": ["node_modules", "dist/**/*"]
 }

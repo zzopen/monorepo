@@ -1,5 +1,5 @@
-import { GitRepoConfig } from "@/common";
-import { gitHttp } from "./base";
+import { GitRepoConfig } from "@/common/index.js";
+import { gitHttp } from "./base.js";
 
 export async function getRepoContents(conf: GitRepoConfig):Promise<any> {
   const { repo, owner, path = '' } = conf;

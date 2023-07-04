@@ -1,2 +1,2 @@
-export * from './download'
-export {type DownloadConfig} from '@/common/types'
+export * from './download.js'
+export {type DownloadConfig} from '@/common/types.js'
