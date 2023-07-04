@@ -1,5 +1,5 @@
 # @zzopen/eslint-config-typescript
-Eslint Config With Typescript And Prettier Support
+Eslint Config With Typescript And Prettier Support(不支持tsx)
 
 # 使用
 ```shell

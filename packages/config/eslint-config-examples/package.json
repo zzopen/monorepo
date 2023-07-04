@@ -2,6 +2,7 @@
   "name": "@zzopen/eslint-config-examples",
   "version": "1.0.0",
   "description": "测试eslint-config各个项目",
+  "type": "module",
   "private": true,
   "scripts": {
     "eslint": "eslint .",

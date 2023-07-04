@@ -1,22 +1,29 @@
-import type {PackageJson, InputOption, RollupNodeResolveOptions, RollupJsonOptions, RPT2Options, ExternalsOptions, RollupStripOptions} from './library'
-import type {commonjs} from './library'
-import type {TscAliasPluginOptions} from './plugins/tscAlias'
+import type {
+  PackageJson,
+  InputOption,
+  RollupNodeResolveOptions,
+  RollupJsonOptions,
+  RPT2Options,
+  ExternalsOptions,
+  RollupStripOptions,
+  commonjs,
+} from './library'
+import type { TscAliasPluginOptions } from './plugins/tscAlias'
 
-type RollupCommonJSOptions = Parameters<typeof commonjs>[0] & {};
-type DeepPartial<T> = { [P in keyof T]?: DeepPartial<T[P]> };
+type RollupCommonJSOptions = Parameters<typeof commonjs>[0] & {}
+type DeepPartial<T> = { [P in keyof T]?: DeepPartial<T[P]> }
 
-/**************** build.config.ts start ****************/
+/** ************** build.config.ts start *************** */
 interface OutputOption {
-  format: "esm" | "cjs"
+  format: 'esm' | 'cjs'
   dir: string
   name: string
-  ext: "cjs" | "mjs" | "js"
+  ext: 'cjs' | 'mjs' | 'js'
 }
 
-interface BuildConfig extends DeepPartial<BuildOptions> {
-}
+type BuildConfig = DeepPartial<BuildOptions>
 
-/**************** build.config.ts end ****************/
+/** ************** build.config.ts end *************** */
 interface BuildOptions {
   output: OutputOption[]
   input: InputOption
@@ -42,20 +49,20 @@ interface BuildPlugin {
 }
 
 interface ContextEntries {
-    path: string
-    bytes?: number
-    exports?: string[]
-    chunks?: string[]
-    chunk?: boolean
-    modules?: { id: string; bytes: number }[]
+  path: string
+  bytes?: number
+  exports?: string[]
+  chunks?: string[]
+  chunk?: boolean
+  modules?: { id: string; bytes: number }[]
 }
 
 interface BuildContext {
- rootDir: string
- options: BuildOptions
- pkg: PackageJson
- entries: ContextEntries[]
- warnings: Set<string>
+  rootDir: string
+  options: BuildOptions
+  pkg: PackageJson
+  entries: ContextEntries[]
+  warnings: Set<string>
 }
 
 export type { BuildContext, BuildPlugin, BuildOptions, BuildConfig, ContextEntries, InputOption }

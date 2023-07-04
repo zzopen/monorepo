@@ -16,12 +16,12 @@
     "dist"
   ],
   "scripts": {
-    "dev": "",
+    "eslint": "eslint --fix .",
     "zrp": "jiti ./src/bin"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-commonjs": "^25.0.2",
@@ -48,7 +48,10 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
-    "@types/node": "^20.3.1"
+    "@types/node": "^20.3.1",
+    "@zzopen/eslint-config-typescript": "workspace:^",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8"
   },
   "packageManager": "pnpm@8.6.5"
 }

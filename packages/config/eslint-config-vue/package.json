@@ -1,6 +1,6 @@
 {
   "name": "@zzopen/eslint-config-vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Eslint Config With Typescript And Vue And Prettier Support",
   "main": "index.js",
   "exports": {

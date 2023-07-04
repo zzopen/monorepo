@@ -1,14 +1,14 @@
-import type { Plugin, PluginContext } from "../library"
-import {replaceTscAliasPaths} from "../library"
+import type { Plugin } from '../library'
+import { replaceTscAliasPaths } from '../library'
 
 export interface TscAliasPluginOptions {
   outDir?: string[]
 }
 
 function tscAlias(options: TscAliasPluginOptions = {}): Plugin {
-  const {outDir = []} = options
+  const { outDir = [] } = options
   return {
-    name: "rollup-plugin-tsc-alias",
+    name: 'rollup-plugin-tsc-alias',
     writeBundle: async () => {
       for (const dir of outDir) {
         await replaceTscAliasPaths({
@@ -16,8 +16,8 @@ function tscAlias(options: TscAliasPluginOptions = {}): Plugin {
           outDir: dir,
         })
       }
-    }
+    },
   }
 }
 
-export {tscAlias}
+export { tscAlias }
