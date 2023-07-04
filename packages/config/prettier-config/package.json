@@ -1,6 +1,6 @@
 {
   "name": "@zzopen/prettier-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Prettier Config",
   "main": "index.js",
   "exports": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/zzopen/monorepo",
   "engines": {
-    "node": ">=18.6.0"
+    "node": ">=14.21.3"
   },
   "peerDependencies": {
     "prettier": "^2.8.8"
