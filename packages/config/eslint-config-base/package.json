@@ -1,6 +1,6 @@
 {
   "name": "@zzopen/eslint-config-base",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Eslint Config Base",
   "main": "index.js",
   "exports": {
@@ -8,6 +8,10 @@
     "./package.json": "./package.json",
     "./prettier": "./.prettierrc.js"
   },
+  "files": [
+    "index.js",
+    ".prettierrc.js"
+  ],
   "scripts": {
     "lint": "eslint --fix .",
     "reset": "rm -rf ./node_modules && pnpm i"
@@ -40,8 +44,8 @@
   "devDependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-import": "^2.27.5"
   },
   "publishConfig": {
     "access": "public",
