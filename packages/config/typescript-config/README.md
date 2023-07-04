@@ -1,11 +1,11 @@
-# @zzopen/tsconfig
+# @zzopen/typescript-config
 
 TSConfigs for Personal projects to extend.
 
 ## install
 
 ```bash
-pnpm i -D @zzopen/tsconfig
+pnpm i -D @zzopen/typescript-config
 ```
 
 ## usage
@@ -13,7 +13,7 @@ pnpm i -D @zzopen/tsconfig
 ```json
 // your_tsconfig.json
 {
-  "extends": "@zzopen/tsconfig",
+  "extends": "@zzopen/typescript-config",
   // custom config...
   "compilerOptions": {
     "outDir": "./lib",

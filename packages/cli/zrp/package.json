@@ -8,19 +8,19 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/types/index.d.ts",
       "default": "./dist/index.mjs"
     }
   },
-  "files": [
+  "files:" :[
     "dist"
   ],
   "scripts": {
     "eslint": "eslint --fix .",
     "zrp": "jiti ./src/bin"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["build", "rollup", "zrp"],
+  "author": "xulei",
   "license": "MIT",
   "dependencies": {
     "@rollup/plugin-alias": "^5.0.0",
@@ -53,5 +53,17 @@
     "eslint": "^8.43.0",
     "prettier": "^2.8.8"
   },
-  "packageManager": "pnpm@8.6.5"
+  "packageManager": "pnpm@8.6.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzopen/monorepo"
+  },
+  "bugs": {
+    "url": "https://github.com/zzopen/monorepo/issues"
+  },
+  "homepage": "https://github.com/zzopen/monorepo",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

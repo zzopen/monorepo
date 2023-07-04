@@ -6,4 +6,3 @@
 - sourcemap 生成
 - 完成package.json编写
 - stub研究
-- 调研esbuild typescript 可能性
