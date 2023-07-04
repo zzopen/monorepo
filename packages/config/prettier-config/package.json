@@ -7,6 +7,9 @@
     ".": "./index.js",
     "./package.json": "./package.json"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zzopen/monorepo"
