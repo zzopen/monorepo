@@ -9,19 +9,15 @@ export default defineBuildConfig({
     entries: [
       {
         input: 'src/index',
-        outDir: './dist/esm',
+        outDir: './dist',
         format:'esm',
-        name: 'index',
-        ext: 'js',
-        declaration: true
+        ext: 'mjs'
       },
       {
         input: 'src/index',
-        outDir: './dist/cjs',
+        outDir: './dist',
         format:'cjs',
-        name: 'index',
-        ext: 'cjs',
-        declaration: true
+        ext: 'cjs'
       }
     ],
     alias:  {'@': path.resolve(__dirname, 'src/')},
@@ -30,7 +26,6 @@ export default defineBuildConfig({
     rollup: {
       emitCJS: true,
       inlineDependencies: true,
-    },
-    externals: ['axios','fs-extra'],
-
+      esbuild: {minify: true}
+    }
 })

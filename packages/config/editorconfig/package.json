@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zzopen/monorepo"
+    "url": "https://github.com/zzopen/monorepo.git"
   },
   "bugs": {
     "url": "https://github.com/zzopen/monorepo/issues"

@@ -38,12 +38,12 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
-    "@zzopen/eslint-config-base": "workspace:^",
+    "@zzopen/eslint-config": "workspace:^",
     "typescript": "^5.1.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zzopen/monorepo"
+    "url": "https://github.com/zzopen/monorepo.git"
   },
   "bugs": {
     "url": "https://github.com/zzopen/monorepo/issues"
